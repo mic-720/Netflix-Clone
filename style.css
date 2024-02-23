@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background: url("../images/netflix-home-2.jpg"),rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* filter: brightness(75%) saturate(140%); */
+}
+img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    height: 98vh;
+    width: 100%;
+    filter: brightness(35%) saturate(140%);
+}
+header{
+    width: 100%;
+    height: 100px;
+    padding: 0.8rem;
+    position: absolute;
+    top: 0;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > div{
+    padding: 0 4rem;
+}
+header .netflix-logo{
+    color: rgb(229, 9, 20);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.lang-btn{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.dropdown{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.4rem 1.8rem 0.4rem 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(184, 176, 176);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 0.7rem;
+}
+.dropdown i{
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    font-size: 13px;
+    margin-right: 2px;
+}
+header button{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.main{
+    width: 100%;
+    height: 83vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+}
+.heading{
+    font-weight: 900;
+    font-size: 3rem;
+    /* padding: 1rem; */
+    margin-bottom: 1rem;
+}
+.p-1{
+    font-size: 1.7rem;
+    /* padding: 0.5rem; */
+    margin-bottom: 1.2rem;
+}
+.p-2{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.email-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.main input{
+    border: 1px solid rgb(184, 176, 176);
+    border-radius: 5px;
+    outline: none;
+    padding: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    color: white;
+    font-size: 1rem;
+}
+.main button{
+    padding: 1rem 1.2rem;
+    background-color: rgb(229, 9, 20);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.35rem;
+    cursor: pointer;
+}
+.main i{
+    font-size: 1.3rem;
+    padding: 0 10px 0 7px;
+    line-height: 1.25rem;
+}
+::placeholder{
+    color: rgb(214, 202, 202);
+    font-size: 15px;
+}
+button:hover{
+    transition: 1s;
+    background-color: rgb(198, 32, 40);
+}

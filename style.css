@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     height: 100vh;
-    position: relative;
+    /* position: relative; */
     /* background: url("../images/netflix-home-2.jpg"),rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,17 +18,18 @@ img{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
     height: 98vh;
     width: 100%;
-    filter: brightness(35%) saturate(140%);
+    filter: brightness(30%) saturate(140%);
+    z-index: -1;
+    position: absolute;
 }
 header{
     width: 100%;
     height: 100px;
     padding: 0.8rem;
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
 }
 header nav{
     display: flex;
@@ -53,25 +54,36 @@ header .netflix-logo{
 .dropdown{
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 0.4rem 1.8rem 0.4rem 1rem;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid rgb(184, 176, 176);
     font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.7rem;
     position: relative;
-    margin: 0 0.7rem;
+    padding: 6px 15px;
 }
 .dropdown i{
-    position: absolute;
+    /* position: absolute;
     right: 10px;
     top: 9px;
     font-size: 13px;
-    margin-right: 2px;
+    margin-right: 2px; */
+    /* position: absolute;
+    right: 10px;
+    top: 50%; */
+    color: white;
 }
+.arrow{
+    margin-bottom: 3px;
+}
+.lang-2{
+    display: none;
+}
+
 header button{
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
     background-color: rgb(229, 9, 20);
     color: white;
@@ -89,8 +101,9 @@ header button{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 100px;
+    /* position: absolute;
+    top: 100px; */
+    text-align: center;
 }
 .heading{
     font-weight: 900;
